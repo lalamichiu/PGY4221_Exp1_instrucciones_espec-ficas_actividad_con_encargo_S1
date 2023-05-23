@@ -1,1 +1,0 @@
-Loreto Bertran Garrido
