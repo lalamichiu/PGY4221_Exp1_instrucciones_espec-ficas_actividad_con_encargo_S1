@@ -15,6 +15,18 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'agendarhoralaboratorio',
+    loadChildren: () => import('./agendarhoralaboratorio/agendarhoralaboratorio.module').then( m => m.AgendarhoralaboratorioPageModule)
+  },
+  {
+    path: 'resultadoexamenes',
+    loadChildren: () => import('./resultadoexamenes/resultadoexamenes.module').then( m => m.ResultadoexamenesPageModule)
+  },
 ];
 
 @NgModule({

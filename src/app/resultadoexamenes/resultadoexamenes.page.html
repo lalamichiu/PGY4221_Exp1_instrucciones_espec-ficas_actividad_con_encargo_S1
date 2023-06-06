@@ -1,0 +1,46 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>LabTool</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <h1>Resultado examenes</h1>
+          <h2>Hemoglobina</h2>
+          <p>Resultado: {{resultado1}} g/dL</p>
+          <p>Valor de referencia: 12.0 - 15.5 g/dL</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <h2>Glucosa en ayunas</h2>
+          <p>Resultado: {{resultado2}} mg/dL</p>
+          <p>Valor de referencia: Menos de 100 mg/dL</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <h2>Perfil Lipídico</h2>
+          <p>Resultado: Colesterol total: {{resultado3}} mg/dL</p>
+          <p>Valor de referencia: Menos de 200 mg/dL</p>
+          <p>Triglicéridos: {{resultado4}} mg/dL</p>
+          <p>Valor de referencia: Menos de 150 mg/dL</p>
+          <p>HDL: {{resultado5}} mg/dL</p>
+          <p>Valor de referencia: Más de 40 mg/dL</p>
+          <p>LDL: {{resultado6}} mg/dL</p>
+          <p>Valor de referencia: Menos de 130 mg/dL</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <mat-list>
+      <div mat-subheader><mat-icon matListItemIcon>folder</mat-icon> Historial examenes</div>
+
+
+    <ion-button expand="full" href="/agendarhoralaboratorio" color="primary" onclick="salir()">Agendar hora laboratorio <mat-icon>add_alert</mat-icon></ion-button>
+    <ion-button expand="full" href="/login" color="primary" onclick="salir()">Salir <mat-icon>arrow_right_alt</mat-icon></ion-button>
