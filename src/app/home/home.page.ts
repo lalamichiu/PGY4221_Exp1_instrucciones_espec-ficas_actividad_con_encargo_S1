@@ -7,7 +7,10 @@ import { Component, OnInit} from '@angular/core';
 })
 export class HomePage {
 
+
   
   constructor() {}
 usuario1: string = "Juan Perez";
 }
+
+
