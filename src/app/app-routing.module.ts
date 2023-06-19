@@ -32,6 +32,10 @@ const routes: Routes = [
     loadChildren: () => import('./resultadoexamenes/resultadoexamenes.module').then( m => m.ResultadoexamenesPageModule),
     canActivate: [DbService]
   },
+  {
+    path: 'e404',
+    loadChildren: () => import('./e404/e404.module').then( m => m.E404PageModule)
+  },
 ];
 
 @NgModule({
