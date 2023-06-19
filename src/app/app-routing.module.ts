@@ -15,6 +15,38 @@ const routes: Routes = [
   },
   {
     path: 'login',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'registro',
+    redirectTo: 'registro',
+    pathMatch: 'full'
+  },
+  {
+    path: 'resultadoexamenes',
+    redirectTo: 'resultadoexamenes',
+    pathMatch: 'full'
+  },
+  {
+    path: 'agendarhoralaboratorio',
+    redirectTo: 'agendarhoralaboratorio',
+    pathMatch: 'full'
+  },
+
+  {
+    path: '**',
+    redirectTo: 'e404',
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
