@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <ion-content fullscreen class="ion-padding">
   <!-- Header -->
   <ion-header>
@@ -34,3 +35,41 @@
   </ion-content>
 </ion-content>
 
+=======
+<ion-content fullscreen class="ion-padding">
+  <!-- Header -->
+  <ion-header>
+    <!-- Header bar -->
+    <ion-toolbar>
+      <!-- Title -->
+      <ion-title class="ion-text-center ion-text-wrap">
+        Iniciar Sesión
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Content -->
+  <ion-content class="ion-padding">
+    <!-- Card -->
+    <ion-card>
+      <ion-card-content>
+        <!-- Usuario -->
+        <ion-item>
+          <ion-label color="medium" position="floating">Nombre de usuario</ion-label>
+          <ion-input id="username" name="username" placeholder="Mínimo de tres caracteres y un máximo de ocho" minlength="3" maxlength="8" required></ion-input>
+        </ion-item>
+        <!-- Password -->
+        <ion-item>
+          <ion-label color="medium" position="floating">Contraseña</ion-label>
+          <ion-input id="password" name="password" placeholder="Contraseña numérica de cuatro dígitos" type="password" value="password" minlength="4" maxlength="4" required></ion-input>
+        </ion-item>
+        <!-- Buttons -->
+        <ion-button shape="round" [routerLink]="['/menu']" size="full">LOGIN</ion-button>
+        <ion-checkbox> Mantener sesión iniciada</ion-checkbox>
+        <ion-button color="medium" fill="clear" size="full">¿No puedes iniciar sesión?</ion-button>
+        <ion-button color="medium" fill="clear" size="full">¿Aún no tienes tu cuenta?</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-content>
+
+>>>>>>> 27f522474ee04cc8dbf7fe880abb147d0c9c1ffc

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <ion-header>
   <ion-toolbar class="pink">
     <ion-title>
@@ -24,3 +25,45 @@
 
         </ion-content>
 
+=======
+
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>LabTool</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+
+
+
+          <ion-input type="text" minlength="3" maxlength="8" pattern="[a-zA-Z0-9]*" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" minlength="4" maxlength="4" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" href="/home" type="submit">Iniciar sesión <mat-icon>how_to_reg</mat-icon></ion-button>
+        <ion-button expand="full" href="/registro" type="submit">Crear Usuario <mat-icon>add</mat-icon></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+>>>>>>> 27f522474ee04cc8dbf7fe880abb147d0c9c1ffc
